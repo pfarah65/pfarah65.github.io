@@ -1,1 +1,89 @@
-Hello World
+<!DOCTYPE html><html><head><meta charset="UTF-8">
+<title>Resume</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/angular_material/1.1.0-rc2/angular-material.min.css">
+<link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-T8Gy5hrqNKT+hzMclPo118YTQO6cYprQmhrYwIiQ/3axmI1hQomh7Ud2hPOy8SP1" crossorigin="anonymous">
+<link href="https://fonts.googleapis.com/css?family=Raleway:500,200,700" rel="stylesheet">
+<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.3/angular.min.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.3/angular-animate.min.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.3/angular-aria.min.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.3/angular-messages.min.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/angular_material/1.1.0-rc2/angular-material.min.js"></script>
+
+<link href="https://unpkg.com/material-resume@1.0.1/resume.min.css" rel="stylesheet">
+<script src="https://unpkg.com/material-resume@1.0.1/resume.min.js"></script>
+
+</head><body ng-app="Resume" ng-cloak="">
+    <resume>
+        <resume-heading first-name="Peter" last-name="Farah" linkedin="peter-farah" github="pfarah65" email="pfara039@uottawa.ca" phone="613-700-8520">
+        </resume-heading>
+        <resume-body>
+            <resume-column flex="20">
+                <sidebar-category name="Education">
+                    <p> University of Ottawa</p>
+                    <p>3rd year</p>
+                    <p>Computer Engineering</p>
+                    <p>GPA - 9.3/10</p>
+                </sidebar-category>
+                <sidebar-category name="Achievements">
+
+                </sidebar-category>
+                <sidebar-category name="Interests">
+                    <p>Data Structures</p>
+                    <p>Algorithms</p>
+                    <p>Programmings Langauges</p>
+                    <p>Operating Systems</p>
+                    <p>Distributed Systems</p>
+                    <p>Discrete Math</p>
+                </sidebar-category>
+            </resume-column>
+            <resume-column flex="80">
+                <category name="Professional Experience">
+                    <category-item title="Technical Analyst" subtitle="Shared Services Canada">
+                        <li>Managed and organized services in the Service Inventory of Shared Services, Government of Canada</li>
+                        <li>Analysis of services used in the government of Canada and their level of viability </li>
+                        <li>Managing directories including version control and administrator privileges</li>
+                    </category-item>
+                    <category-item title="Software Designer Intern" subtitle="Ribbon Communications">
+                        <li>Worked in an Agile Environment on the Web team with other interns and Seniors</li>
+                        <li>Used JIRA to collaborate with developers on stories</li>
+                        <li>Collaborated with other interns and Employees on design</li>
+                        <li>Used Java to create APIs and scaled on Kubernetes and Docker</li>
+                        <li>Used Angular 2 for Front-End development</li>
+                        <li>Test Automation using Python</li>
+                    </category-item>
+                </category>
+                <category name="Projects">
+                    <category-item title="FloodIt" subtitle="Java MVC Game">
+                        <li>Created a strategy game where you have to fill all the bubble with the same color</li>
+                        <li>Written with Java MVC Framework making use of Java Swing and JavaFX libraries</li>
+                    </category-item>
+                    <category-item title="Duty Helper" subtitle="Android Organizing Tool">
+                        <li>App that allows users to create groups, add members and materials, and assign tasks to others</li>
+                        <li>Using Android Studio, our team was able to create this app while making use of Firebase</li>
+                    </category-item>
+                    <category-item title="CryptoCrave" subtitle="https://crypto-crave.herokuapp.com/">
+                        <li>A blog for discussing ICOs, BitCoin and Blockchain Technology</li>
+                        <li>With the use of Ruby on Rails 5, I was able to implement a blog</li>
+                    </category-item>
+                </category>
+                <category name="Skills">
+                    <category-item title="Web Development">
+                        <li><strong>Frameworks</strong> React, Redux, Reselect, Redankmeme, Revenant, Angular, Express</li>
+                        <li><strong>Frameworks</strong> Bootstrap and Material Design</li>
+
+                    </category-item>
+                    <category-item title="Technologies">
+                        <li><strong>Experienced With</strong> Web &amp; Hybrid App Development \ Functional Programming \ Fullstack Development</li>
+                        <li><strong>Programming</strong> Javascript \ TypeScript \ Python \ Ruby \ HTML \ C \ C++ \ Java</li>
+                        <li><strong>Databases</strong>  MongoDB \ MySQL \ PostgreSQL \ Redis</li>
+                        <li><strong>Platform</strong>  Kubernetes \ Docker</li>
+
+                    </category-item>
+                </category>
+            </resume-column>
+        </resume-body>
+    </resume>
+
+
+</body></html>
